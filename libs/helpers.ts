@@ -1,6 +1,5 @@
 import { Price } from '@/types';
 
-export const getURL = "https://spotify-kvijay2.vercel.app"
 export const postData = async ({
   url,
   data
