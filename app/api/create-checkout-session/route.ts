@@ -3,7 +3,6 @@ import { cookies } from "next/headers";
 import { NextResponse } from 'next/server';
 
 import { stripe } from '@/libs/stripe';
-import { getURL } from '@/libs/helpers';
 import { createOrRetrieveCustomer } from '@/libs/supabaseAdmin';
 
 export async function POST(
@@ -39,8 +38,8 @@ export async function POST(
         trial_from_plan: true,
         metadata
       },
-      success_url: `${getURL()}/account`,
-      cancel_url: `${getURL()}/`
+      success_url: "https://spotify-git-main-kvijay2.vercel.app/account",
+      cancel_url: "https://spotify-git-main-kvijay2.vercel.app"
     });
 
     return NextResponse.json({ sessionId: session.id });
