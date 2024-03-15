@@ -38,8 +38,8 @@ export async function POST(
         trial_from_plan: true,
         metadata
       },
-      success_url: "https://spotify-kvijay2.vercel.app/account",
-      cancel_url: "https://spotify-kvijay2.vercel.app/"
+      success_url: "https://spotify-git-main-kvijay2.vercel.app/account",
+      cancel_url: "https://spotify-git-main-kvijay2.vercel.app"
     });
 
     return NextResponse.json({ sessionId: session.id });

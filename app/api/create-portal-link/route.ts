@@ -24,7 +24,7 @@ export async function POST() {
     if (!customer) throw Error('Could not get customer');
     const { url } = await stripe.billingPortal.sessions.create({
       customer,
-      return_url: "https://spotify-kvijay2.vercel.app/account"
+      return_url: "https://spotify-git-main-kvijay2.vercel.app/account"
     });
 
     return NextResponse.json({ url });
